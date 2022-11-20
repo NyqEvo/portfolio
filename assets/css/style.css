@@ -1,0 +1,228 @@
+:root {
+    --main-color: rgb(106, 108, 110);
+    --alt-color: rgb(32, 32, 32);
+    --title-color: rgba(255, 255, 255, 0.548);
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: var(--alt-color);
+    flex: 1;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 40 px;
+    margin-left: 20px;
+    color: var(--title-color);
+}
+
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+nav ul li a:link, a:visited {
+    text-decoration: none;
+    color: var(--title-color);
+}
+
+
+
+body {
+    background-color: var(--main-color);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+section h2 {
+    font-size: 40px;
+}
+
+footer {
+    display: flex;
+    padding: 10px;
+    font-size: 30px;
+    color: var(--title-color);
+    background-color: var(--alt-color);
+    justify-content: center;
+}
+
+.space-bg {
+    height: 400px;
+    width: 100%;
+    margin: 0 0 20px 0;
+    background-image: url(../images/space_1_homework.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+
+.about-me {
+    display: flex;
+    margin: 20px 30px;
+}
+
+.about-me p {
+    padding: 10px;
+}
+
+h2 {
+    display: flex;
+    align-self: flex-start;
+    flex-basis: 50px;
+    justify-content: center;
+    width: auto;
+    margin: 20px 30px;
+    padding-right: 10px;
+    border-right: solid var(--alt-color) 5px;
+    white-space: nowrap;
+}
+
+.main-project {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 75%;
+    margin: 20px 30px;
+}
+
+.main-project h3 {
+    display: flex;
+}
+
+.main-project article {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-project img {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-width: 300px;
+    margin: auto;
+
+}
+
+.alt-project {
+    display: flex;
+    width: auto;
+    margin: 0 100px 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.alt-project article {
+    position: relative;
+    width: auto;
+    flex-wrap: wrap;
+    margin: 0 20 px;
+}
+
+.alt-project img {
+    position: relative;
+    margin: 0 25px;
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+}
+
+.alt-project h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    color: blue;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 100%;
+    left: 80%;
+    margin-left: -60%;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+#Contact {
+    display: flex;
+}
+
+#Contact ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: auto;
+}
+
+#Contact ul li {
+    display: inline-flex;
+    justify-items: space-around;
+    padding: 30px;
+    margin: auto;
+}
+
+#Contact ul li a {
+    color: blue;
+}
+
+#Contact ul li a:visited {
+    color: blueviolet;
+}
+
+@media screen and (max-width: 820px) {
+    body {
+        flex-direction: column;
+        width: auto;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .about-me, .main-project, #Contact {
+        flex-direction: column;
+    }
+
+    h2 {
+        display: flex;
+        border-right: none;
+        border-bottom: solid var(--alt-color) 5px;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+    }
+}
