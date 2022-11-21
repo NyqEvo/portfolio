@@ -44,8 +44,6 @@ nav ul li a:link, a:visited {
     color: var(--title-color);
 }
 
-
-
 body {
     background-color: var(--main-color);
 }
@@ -56,8 +54,16 @@ section {
     flex: 1;
 }
 
+section a {
+    text-decoration: none;
+}
+
 section h2 {
     font-size: 40px;
+}
+
+section h3 {
+    color: black;
 }
 
 footer {
@@ -81,11 +87,17 @@ footer {
 
 .about-me {
     display: flex;
+    flex-direction: row;
     margin: 20px 30px;
 }
 
 .about-me p {
     padding: 10px;
+}
+
+.about-me img {
+    width: 100px;
+    height: auto;
 }
 
 h2 {
@@ -102,7 +114,7 @@ h2 {
 
 .main-project {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     max-width: 75%;
     margin: 20px 30px;
