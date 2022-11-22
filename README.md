@@ -6,7 +6,7 @@ This is a mock portfolio I made for the homework from section 02-Advanced CSS. T
 
 ## Table of Contents
 
--README file
--index.html: the file used for the content of the site
--reset.css: the file used to reset any style from the browser on the site before implementing my own stylesheet
--style.css: the file that contains my own style for the site content
+- README file
+- index.html: the file used for the content of the site
+- reset.css: the file used to reset any style from the browser on the site before implementing my own stylesheet
+- style.css: the file that contains my own style for the site content
